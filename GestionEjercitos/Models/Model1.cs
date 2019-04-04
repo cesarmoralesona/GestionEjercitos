@@ -1,5 +1,6 @@
 ﻿namespace GestionEjercitos.Models
 {
+    using System.CodeDom;
     using System;
     using System.Data.Entity;
     using System.Linq;
