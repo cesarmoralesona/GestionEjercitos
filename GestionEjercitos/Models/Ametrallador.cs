@@ -2,24 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.ComponentModel.DataAnnotations;
 
 namespace Ejercito
 {
-    public class Ametrallador : IInfanteria, IMovil, IDestructor, IPreciable, IUnidad
+    public class Ametrallador : /*Ejercito.Division,*/ IInfanteria, IMovil, IDestructor, IPreciable, IUnidad
     {
-        [Required]
+        public Ametrallador(int iD, string nombreAmetrallador, IEjercito ejercito, double potenciaDeFuego, double precio, double velocidad)
+        {
+            ID = iD;
+            NombreAmetrallador = nombreAmetrallador ?? throw new ArgumentNullException(nameof(nombreAmetrallador));
+            IEjercito = ejercito ?? throw new ArgumentNullException(nameof(ejercito));
+            PotenciaDeFuego = potenciaDeFuego;
+            Precio = precio;
+            Velocidad = velocidad;
+        }
+
         public int ID { get; set; }
-        [Required]
-        [StringLength(50)]
         public string NombreAmetrallador { get; set; }
+
+
         public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        [Required]
         public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        [Required]
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        [Required]
-        double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public double DamePotenciaDeFuego()
         {
