@@ -132,7 +132,7 @@
     <Compile Include="Models\Cañon.cs" />
     <Compile Include="Models\CañonAntiaereo.cs" />
     <Compile Include="Models\Division.cs" />
-    <Compile Include="Models\Ejercito.cs" />
+    <Compile Include="Models\Army.cs" />
     <Compile Include="Models\Interfaces\IArtilleria.cs" />
     <Compile Include="Models\Interfaces\IBlindado.cs" />
     <Compile Include="Models\Interfaces\ICaballeria.cs" />
