@@ -12,5 +12,14 @@ namespace Ejercito
         {
 
         }
+        public void Edit(IUnidad miUnidad)
+        {
+
+        }
+        public void Delete(IUnidad miUnidad)
+        {
+
+        }
+
     }
 }

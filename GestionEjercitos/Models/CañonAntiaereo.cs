@@ -14,19 +14,19 @@ namespace Ejercito
         public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+       
 
         public double DamePotenciaDeFuego()
         {
             throw new NotImplementedException();
         }
 
-        public void DamePrecio()
+        public double DamePrecio()
         {
             throw new NotImplementedException();
         }
 
-        public void DameVelocidad()
+        public double DameVelocidad()
         {
             throw new NotImplementedException();
         }
