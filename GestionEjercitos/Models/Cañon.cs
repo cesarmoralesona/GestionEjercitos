@@ -7,7 +7,8 @@ namespace Ejercito
 {
     public class Cañon : IArtilleria, IUnidad, IDestructor, IPreciable
     {
-        private double potenFuego;
+        private double potfuego;
+        private double precioUnid;
         public Cañon(int iD, string nombreCañon,  double potenciaDeFuego, double precio)
         {
             ID = iD;
@@ -21,8 +22,8 @@ namespace Ejercito
         public string NombreCañon { get; set; }
 
         public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double PotenciaDeFuego { get => potenFuego; set => potenFuego = value; }
-        public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double PotenciaDeFuego { get => potfuego; set => potfuego = value; }
+        public double Precio { get => precioUnid; set => precioUnid = value; }
 
         public double DamePotenciaDeFuego()
         {

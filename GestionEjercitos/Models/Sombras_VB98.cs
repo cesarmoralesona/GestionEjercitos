@@ -21,7 +21,7 @@ namespace Ejercito
             throw new NotImplementedException();
         }
 
-        public void DamePotenciaDeFuego()
+        public double DamePotenciaDeFuego()
         {
             throw new NotImplementedException();
         }

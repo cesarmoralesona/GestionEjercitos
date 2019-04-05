@@ -5,13 +5,13 @@ using Ejercito;
 namespace MiEjercitoPruebas
 {
     [TestClass]
-    public class PruebaCapacidadMilitar
+    public class PruebaCañon
     {
         [TestMethod]
         public void Capacidad()
         {
-            Cañon cañonsito = new Cañon(1,"Jorge",20,1500);
-            Assert.AreEqual(cañonsito.DamePotenciaDeFuego(),20,0.001);
+            Cañon cañonsito = new Cañon(10,"Jorge",20,150);
+            Assert.AreEqual(cañonsito.DamePotenciaDeFuego(),20);
         }
     }
 }
