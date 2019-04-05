@@ -148,7 +148,7 @@
     <Compile Include="Models\Interfaces\IMovil.cs" />
     <Compile Include="Models\InfanteriaBasica.cs" />
     <Compile Include="Models\Interfaces\IPreciable.cs" />
-    <Compile Include="Models\IUnidad.cs" />
+    <Compile Include="Models\Interfaces\IUnidad.cs" />
     <Compile Include="Models\MX_7899.cs" />
     <Compile Include="Models\Sanitario.cs" />
     <Compile Include="Models\Sombras_VB98.cs" />
