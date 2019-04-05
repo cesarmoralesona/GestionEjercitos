@@ -7,11 +7,11 @@ namespace Ejercito
 {
     public class Ametrallador : /*Ejercito.Division,*/ IInfanteria, IMovil, IDestructor, IPreciable, IUnidad
     {
-        public Ametrallador(int iD, string nombreAmetrallador, IEjercito ejercito, double potenciaDeFuego, double precio, double velocidad)
+        public Ametrallador(int iD, string nombreAmetrallador, double potenciaDeFuego, double precio, double velocidad)
         {
             ID = iD;
             NombreAmetrallador = nombreAmetrallador ?? throw new ArgumentNullException(nameof(nombreAmetrallador));
-            IEjercito = ejercito ?? throw new ArgumentNullException(nameof(ejercito));
+            //IEjercito = ejercito ?? throw new ArgumentNullException(nameof(ejercito));
             PotenciaDeFuego = potenciaDeFuego;
             Precio = precio;
             Velocidad = velocidad;
@@ -26,7 +26,7 @@ namespace Ejercito
 
         public double DameCapacidadMilitar()
         {
-            throw new NotImplementedException();
+            return CapacidadMilitar.DameCapacidadMilitar(PotenciaDeFuego, Velocidad, 0);
         }
 
         public double DamePotenciaDeFuego()
