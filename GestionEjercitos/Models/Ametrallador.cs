@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GestionEjercitos
+namespace Ejercito
 {
     public class Ametrallador : /*Ejercito.Division,*/ IInfanteria, IMovil, IDestructor, IPreciable, IUnidad
     {
@@ -16,7 +16,7 @@ namespace GestionEjercitos
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public void DamePotenciaDeFuego()
+        public double DamePotenciaDeFuego()
         {
             throw new NotImplementedException();
         }
