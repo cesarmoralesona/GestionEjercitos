@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace Ejercito
 {
@@ -17,7 +18,10 @@ namespace Ejercito
             Precio = precio;
         }
 
+        [Required]
         public int ID { get; set; }
+        [Required]
+        [StringLength(50)]
         public string NombreCañon { get; set; }
 
         public IEjercito IEjercito { get; set ; }
