@@ -5,12 +5,29 @@ using System.Text;
 
 namespace Ejercito
 {
-    public class Ejercito
+    public class InfanteriaBasica : IInfanteria, IPreciable, IDestructor, IMovil, IUnidad
     {
-        private List<IDivision> division = new List<IDivision>();
-        public void Add(IDivision miDivision)
-        {
+        public int ID { get; set; }
+        public string NombreInfanteriaBasica { get; set; }
 
+        public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void DamePotenciaDeFuego()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DamePrecio()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DameVelocidad()
+        {
+            throw new NotImplementedException();
         }
     }
 }
