@@ -123,6 +123,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\EjercitoContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -131,7 +132,7 @@
     <Compile Include="Models\Cañon.cs" />
     <Compile Include="Models\CañonAntiaereo.cs" />
     <Compile Include="Models\Division.cs" />
-    <Compile Include="Models\Ejercito.cs" />
+    <Compile Include="Models\Army.cs" />
     <Compile Include="Models\Interfaces\IArtilleria.cs" />
     <Compile Include="Models\Interfaces\IBlindado.cs" />
     <Compile Include="Models\Interfaces\ICaballeria.cs" />
@@ -227,7 +228,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ejercito
 {
-    public class Ejercito
+    public class Army
     {
         private List<IDivision> division = new List<IDivision>();
         public void Add(IDivision miDivision)
