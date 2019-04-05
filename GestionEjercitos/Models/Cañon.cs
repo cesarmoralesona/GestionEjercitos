@@ -12,7 +12,6 @@ namespace Ejercito
         {
             ID = iD;
             NombreCañon = nombreCañon ?? throw new ArgumentNullException(nameof(nombreCañon));
-            //IEjercito = ejercito ?? throw new ArgumentNullException(nameof(ejercito));
             PotenciaDeFuego = potenciaDeFuego;
             Precio = precio;
         }
@@ -34,7 +33,7 @@ namespace Ejercito
             return PotenciaDeFuego;
         }
 
-        public void DamePrecio()
+        public double DamePrecio()
         {
             throw new NotImplementedException();
         }

@@ -19,12 +19,12 @@ namespace Ejercito
             throw new NotImplementedException();
         }
 
-        public void DamePrecio()
+        public double DamePrecio()
         {
             throw new NotImplementedException();
         }
 
-        public void DameVelocidad()
+        public double DameVelocidad()
         {
             throw new NotImplementedException();
         }

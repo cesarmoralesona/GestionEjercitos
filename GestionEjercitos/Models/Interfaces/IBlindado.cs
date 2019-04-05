@@ -9,6 +9,7 @@ namespace Ejercito
     {
         double Blindaje { get; set; }
 
-        void DameBlindaje();
+        double DameBlindaje();
+        
     }
 }
