@@ -10,6 +10,6 @@ namespace Ejercito
     {
         double PotenciaDeFuego { get; set; }
 
-        void DamePotenciaDeFuego();
+        double DamePotenciaDeFuego();
     }
 }

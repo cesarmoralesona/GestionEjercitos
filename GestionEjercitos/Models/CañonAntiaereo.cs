@@ -14,6 +14,7 @@ namespace Ejercito
         public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void DamePotenciaDeFuego()
         {
@@ -26,6 +27,11 @@ namespace Ejercito
         }
 
         public void DameVelocidad()
+        {
+            throw new NotImplementedException();
+        }
+
+        double IDestructor.DamePotenciaDeFuego()
         {
             throw new NotImplementedException();
         }

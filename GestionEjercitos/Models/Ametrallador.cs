@@ -16,7 +16,7 @@ namespace Ejercito
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public void DamePotenciaDeFuego()
+        public double DamePotenciaDeFuego()
         {
             throw new NotImplementedException();
         }

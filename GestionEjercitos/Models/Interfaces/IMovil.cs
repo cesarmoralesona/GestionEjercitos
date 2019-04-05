@@ -7,7 +7,7 @@ namespace Ejercito
 {
     public interface IMovil
     {
-        int Velocidad { get; set; }
+        double Velocidad { get; set; }
 
         void DameVelocidad();
     }
