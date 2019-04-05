@@ -132,7 +132,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\Ametrallador.cs" />
+    <Compile Include="Models\CapacidadMilitar.cs" />
+    <Compile Include="Models\Cañon.cs" />
+    <Compile Include="Models\CañonAntiaereo.cs" />
+    <Compile Include="Models\Division.cs" />
+    <Compile Include="Models\Ejercito.cs" />
+    <Compile Include="Models\IArtilleria.cs" />
+    <Compile Include="Models\IBlindado.cs" />
+    <Compile Include="Models\ICaballeria.cs" />
+    <Compile Include="Models\IDestructor.cs" />
+    <Compile Include="Models\IDivision.cs" />
+    <Compile Include="Models\IEjercito.cs" />
+    <Compile Include="Models\IInfanteria.cs" />
+    <Compile Include="Models\IMovil.cs" />
+    <Compile Include="Models\InfanteriaBasica.cs" />
+    <Compile Include="Models\IPreciable.cs" />
+    <Compile Include="Models\IUnidad.cs" />
+    <Compile Include="Models\MX_7899.cs" />
+    <Compile Include="Models\Sanitario.cs" />
+    <Compile Include="Models\Sombras_VB98.cs" />
+    <Compile Include="Models\TAXIN_66.cs" />
+    <Compile Include="Models\TorpederoMovil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
