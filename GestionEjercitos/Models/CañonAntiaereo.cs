@@ -16,6 +16,11 @@ namespace Ejercito
         public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public double DameCapacidadMilitar()
+        {
+            throw new NotImplementedException();
+        }
+
         public double DamePotenciaDeFuego()
         {
             throw new NotImplementedException();

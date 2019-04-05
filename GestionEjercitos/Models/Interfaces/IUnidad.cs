@@ -7,5 +7,7 @@ namespace Ejercito
 {
     public interface IUnidad
     {
+        double DameCapacidadMilitar();
     }
+
 }

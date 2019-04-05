@@ -5,18 +5,13 @@ using System.Text;
 
 namespace Ejercito
 {
-    static class CapacidadMilitar
+    public static class CapacidadMilitar
     {
-        // CapacidadMilitar(double Pf, double Cm, double Bl)
+        public static double DameCapacidadMilitar(double Pf, double Cm, double Bl)
+        {
+            return ((Pf * (Cm / 2)) / 100 - Bl);
+        }
+
        
-
-        ////private double Pf;
-        ////private double Cm;
-        ////private double Bl;
-
-        // static public double DameCapacidadMilitar()
-        //{
-        //    return ((Pf * (Cm / 2)) / 100 - Bl);
-        //}
     }
 }
