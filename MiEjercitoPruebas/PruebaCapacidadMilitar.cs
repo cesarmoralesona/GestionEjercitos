@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
- 
+using GestionEjercitos;
+
 
 namespace MiEjercitoPruebas
 {
@@ -9,7 +10,7 @@ namespace MiEjercitoPruebas
         [TestMethod]
         public void Capacidad()
         {
-            
+            Ejercito
             Assert.AreEqual(DameCapacidadMilitar(20, 4, 20), 2);
         }
     }
