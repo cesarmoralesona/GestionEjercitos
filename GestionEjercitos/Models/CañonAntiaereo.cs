@@ -18,27 +18,24 @@ namespace Ejercito
 
         public double DameCapacidadMilitar()
         {
-            throw new NotImplementedException();
+            return CapacidadMilitar.DameCapacidadMilitar(PotenciaDeFuego, Velocidad, 0);
         }
 
         public double DamePotenciaDeFuego()
         {
-            throw new NotImplementedException();
+            return PotenciaDeFuego;
         }
 
         public double DamePrecio()
         {
-            throw new NotImplementedException();
+            return Precio;
         }
 
         public double DameVelocidad()
         {
-            throw new NotImplementedException();
+            return Velocidad;
         }
 
-        double IDestructor.DamePotenciaDeFuego()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

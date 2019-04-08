@@ -9,6 +9,6 @@ namespace Ejercito
     {
         double Precio { get; set; }
 
-        void DamePrecio();
+        double DamePrecio();
     }
 }
