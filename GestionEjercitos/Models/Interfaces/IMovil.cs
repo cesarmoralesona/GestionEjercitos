@@ -9,6 +9,6 @@ namespace Ejercito
     {
         double Velocidad { get; set; }
 
-        void DameVelocidad();
+        double DameVelocidad();
     }
 }
