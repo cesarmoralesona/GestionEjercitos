@@ -40,5 +40,7 @@ namespace Ejercito
         {
             throw new NotImplementedException();
         }
+        void IMovil.DameVelocidad(){}
+        void IPreciable.DamePrecio(){}
     }
 }
