@@ -5,7 +5,8 @@ using System.Web;
 
 namespace GestionEjercitos.Models
 {
-    public class Unidad
+    abstract class Unidad
     {
+
     }
 }
