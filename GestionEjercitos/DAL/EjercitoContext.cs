@@ -14,6 +14,7 @@ namespace GestionEjercitos.DAL
         public EjercitoContext() : base("EjercitoContext")
         {
             Database.SetInitializer<EjercitoContext>(new DropCreateDatabaseAlways<EjercitoContext>());
+            
         }
         public DbSet<Ametrallador> Ametralladoras { get; set; }
         public DbSet<Cañon> Cañones { get; set; }
