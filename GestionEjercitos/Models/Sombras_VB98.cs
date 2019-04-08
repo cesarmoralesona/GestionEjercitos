@@ -14,39 +14,36 @@ namespace Ejercito
         [StringLength(50)]
         public string NombreSombras_VB98 { get; set; }
 
-        public IEjercito IEjercito { get; set; }
+        public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
-        public double Blindaje { get; set; }
+        public double Blindaje { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
-        public double PotenciaDeFuego { get; set; }
+        public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
-        public double Velocidad { get; set; }
+        public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
-        public double Precio { get; set; }
+        public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public double DameBlindaje()
-        {
-            return Blindaje;
-        }
+        public Division Division { get; set; }
 
-        public double DameCapacidadMilitar()
+        public void DameBlindaje()
         {
-            return CapacidadMilitar.DameCapacidadMilitar(PotenciaDeFuego, Velocidad, Blindaje);
+            throw new NotImplementedException();
         }
 
         public double DamePotenciaDeFuego()
         {
-            return PotenciaDeFuego;
+            throw new NotImplementedException();
         }
 
-        public double DamePrecio()
+        public void DamePrecio()
         {
-            return Precio;
+            throw new NotImplementedException();
         }
 
-        public double DameVelocidad()
+        public void DameVelocidad()
         {
-            return Velocidad;
+            throw new NotImplementedException();
         }
     }
 }

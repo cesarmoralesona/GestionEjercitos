@@ -14,25 +14,22 @@ namespace Ejercito
         [StringLength(50)]
         public string NombreSanitario { get; set; }
 
-        public IEjercito IEjercito { get; set; }
+        public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
-        public double Velocidad { get; set; }
+        public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
-        public double Precio { get; set; }
+        public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public double DameCapacidadMilitar()
+        public Division Division { get; set; }
+
+        public void DamePrecio()
         {
-            return CapacidadMilitar.DameCapacidadMilitar(0, Velocidad, 0);
+            throw new NotImplementedException();
         }
 
-        public double DamePrecio()
+        public void DameVelocidad()
         {
-            return Precio;
-        }
-
-        public double DameVelocidad()
-        {
-            return Velocidad;
+            throw new NotImplementedException();
         }
     }
 }

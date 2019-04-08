@@ -10,32 +10,34 @@ namespace Ejercito
         public int ID { get; set; }
         public string NombreCañonAntiaereo { get; set; }
 
-        public IEjercito IEjercito { get; set; }
-        public double Velocidad { get; set; }
-        public double Precio { get; set; }
-        public double PotenciaDeFuego { get; set; }
+        public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public Division Division { get; set; }
 
-        public double DameCapacidadMilitar()
-        {
-            return CapacidadMilitar.DameCapacidadMilitar(PotenciaDeFuego, Velocidad, 0);
-        }
 
         public double DamePotenciaDeFuego()
         {
-            return PotenciaDeFuego;
+            throw new NotImplementedException();
         }
 
         public double DamePrecio()
         {
-            return Precio;
+            throw new NotImplementedException();
         }
 
         public double DameVelocidad()
         {
-            return Velocidad;
+            throw new NotImplementedException();
         }
 
-        
+        double IDestructor.DamePotenciaDeFuego()
+        {
+            throw new NotImplementedException();
+        }
+        void IMovil.DameVelocidad(){}
+        void IPreciable.DamePrecio(){}
     }
 }

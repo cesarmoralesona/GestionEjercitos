@@ -10,7 +10,7 @@ namespace Ejercito
         public int ID {get; set;}
         public string NombreDivision {get; set;}
         public List<IUnidad> Unidades = new List<IUnidad>();
-
+        public Army Ejercito { get; set; }
         public void Add(IUnidad miUnidad)
         {
 

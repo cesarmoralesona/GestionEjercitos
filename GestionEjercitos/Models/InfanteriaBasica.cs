@@ -27,6 +27,8 @@ namespace Ejercito
             return CapacidadMilitar.DameCapacidadMilitar(PotenciaDeFuego, Velocidad, 0);
         }
 
+        public Division Division { get; set; }
+
         public double DamePotenciaDeFuego()
         {
             return PotenciaDeFuego;
