@@ -22,7 +22,7 @@ namespace Ejercito
         [Required]
         double IMovil.Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public void DameBlindaje()
+        public double DameBlindaje()
         {
             throw new NotImplementedException();
         }
@@ -32,12 +32,12 @@ namespace Ejercito
             throw new NotImplementedException();
         }
 
-        public void DamePrecio()
+        public double DamePrecio()
         {
             throw new NotImplementedException();
         }
 
-        public void DameVelocidad()
+        public double DameVelocidad()
         {
             throw new NotImplementedException();
         }

@@ -148,6 +148,8 @@
     <Compile Include="Models\Sombras_VB98.cs" />
     <Compile Include="Models\TAXIN_66.cs" />
     <Compile Include="Models\TorpederoMovil.cs" />
+    <Compile Include="Models\Unidad.cs" />
+    <Compile Include="Models\UnidadFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
