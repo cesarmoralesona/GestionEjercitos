@@ -5,12 +5,15 @@ using System.Text;
 
 namespace Ejercito
 {
-    public abstract class Division
+    public class Division
     {
-        public List<IUnidad> unidades = new List<IUnidad>();
+        public int ID {get; set;}
+        public string NombreDivision {get; set;}
+        public List<IUnidad> Unidades = new List<IUnidad>();
+
         public void Add(IUnidad miUnidad)
         {
-            
+
         }
         public void Edit(IUnidad miUnidad)
         {
