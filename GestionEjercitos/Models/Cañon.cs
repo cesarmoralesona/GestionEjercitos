@@ -8,17 +8,16 @@ namespace Ejercito
     public class Cañon : IArtilleria, IUnidad, IDestructor, IPreciable
     {
         
-        public Cañon(int iD, string nombreCañon,  double potenciaDeFuego, double precio)
+        public Cañon(int iD, string nombre,  double potenciaDeFuego, double precio)
         {
             ID = iD;
-            NombreCañon = nombreCañon ?? throw new ArgumentNullException(nameof(nombreCañon));
+            NombreCañon = nombre ?? throw new ArgumentNullException(nameof(nombre));
             PotenciaDeFuego = potenciaDeFuego;
             Precio = precio;
         }
 
         public int ID { get; set; }
         public string NombreCañon { get; set; }
-
         public IEjercito IEjercito { get; set ; }
         public double PotenciaDeFuego { get ; set ; }
         public double Precio { get; set; }
@@ -35,7 +34,7 @@ namespace Ejercito
 
         public double DamePrecio()
         {
-            throw new NotImplementedException();
+            return Precio;
         }
 
         
