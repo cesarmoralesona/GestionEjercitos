@@ -8,7 +8,7 @@ namespace MiEjercitoPruebas
     public class PruebaCañon
     {
         [TestMethod]
-        public void Potencia()
+        public void Cañon()
         {
             Cañon cañonsito = new Cañon(10,"Jorge",20,150);
             Assert.AreEqual(cañonsito.DamePotenciaDeFuego(),20);

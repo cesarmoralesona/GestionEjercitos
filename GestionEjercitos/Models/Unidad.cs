@@ -11,9 +11,7 @@ namespace GestionEjercitos.Models
     /// </summary>
     abstract class Unidad
     {
-        public abstract InfanteriaBasica CrearInfanteriaBasica();
-        public abstract Ametrallador CrearAmetrallador();
-        public abstract Sanitario CrearSanitario();
+        
         
     }
 }
