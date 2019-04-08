@@ -7,10 +7,10 @@ namespace Ejercito
 {
     public abstract class Division
     {
-        private List<IUnidad> unidades = new List<IUnidad>();
+        public List<IUnidad> unidades = new List<IUnidad>();
         public void Add(IUnidad miUnidad)
         {
-
+            
         }
         public void Edit(IUnidad miUnidad)
         {

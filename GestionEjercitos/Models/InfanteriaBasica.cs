@@ -8,10 +8,19 @@ namespace Ejercito
 {
     public class InfanteriaBasica : /*Ejercito.Division,*/ IInfanteria, IPreciable, IDestructor, IMovil, IUnidad
     {
+        public InfanteriaBasica(int iD, string nombreInfanteriaBasica, double precio, double potenciaDeFuego, double velocidad)
+        {
+            ID = iD;
+            NombreInfanteriaBasica = nombreInfanteriaBasica ?? throw new ArgumentNullException(nameof(nombreInfanteriaBasica));
+            Precio = precio;
+            PotenciaDeFuego = potenciaDeFuego;
+            Velocidad = velocidad;
+        }
+
         [Required]
         public int ID { get; set; }
-        [Required]
-        [StringLength(50)]
+        [Required]     
+        [MaxLength (50),MinLength (3)]
         public string NombreInfanteriaBasica { get; set; }
 
         public IEjercito IEjercito { get; set; }

@@ -8,6 +8,15 @@ namespace Ejercito
 {
     public class Sanitario : IInfanteria, IMovil, IPreciable, IBlindado, IUnidad
     {
+        public Sanitario(int iD, string nombreSanitario, double blindaje, double precio, double velocidad)
+        {
+            ID = iD;
+            NombreSanitario = nombreSanitario ?? throw new ArgumentNullException(nameof(nombreSanitario));
+            Blindaje = blindaje;
+            Precio = precio;
+            Velocidad = velocidad;
+        }
+
         [Required]
         public int ID { get; set; }
         [Required]
