@@ -7,7 +7,9 @@ namespace Ejercito
 {
     public class Army
     {
-        private List<IDivision> division = new List<IDivision>();
+        public int ID {get; set;}
+        public string NombreEjercito {get; set;}
+        public List<IDivision> Divisiones {get; set;}
         public void Add(IDivision miDivision)
         {
 

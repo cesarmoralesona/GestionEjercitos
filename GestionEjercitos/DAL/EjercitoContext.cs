@@ -4,12 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Migrations;
 using Ejercito;
 
 namespace GestionEjercitos.DAL
 {
     public class EjercitoContext : DbContext
     {
+        public EjercitoContext() : base("EjercitoContext")
+        {
+            Database.SetInitializer<EjercitoContext>(new DropCreateDatabaseAlways<EjercitoContext>());
+        }
         public DbSet<Ametrallador> Ametralladoras { get; set; }
         public DbSet<Cañon> Cañones { get; set; }
         public DbSet<CañonAntiaereo> CañonAntiaereos {get; set;}
@@ -26,6 +31,5 @@ namespace GestionEjercitos.DAL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             base.OnModelCreating(modelBuilder);
         }
-
     }
 }

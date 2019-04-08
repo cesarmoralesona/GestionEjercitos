@@ -16,6 +16,7 @@ namespace Ejercito
 
         public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
+        [DataType(DataType.Currency)]
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         [Required]
         public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
