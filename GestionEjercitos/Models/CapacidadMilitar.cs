@@ -10,6 +10,7 @@ namespace Ejercito
         public static double DameCapacidadMilitar(double Pf, double Cm, double Bl)
         {
             return ((Pf * (Cm / 2)) / 100 - Bl);
+             
         }
 
        
