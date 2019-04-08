@@ -9,7 +9,7 @@ namespace GestionEjercitos.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(GestionEjercitos.DAL.EjercitoContext context)
