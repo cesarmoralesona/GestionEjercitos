@@ -27,6 +27,7 @@ namespace Ejercito
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public Division Division { get; set; }
         public double DamePotenciaDeFuego()
         {
             throw new NotImplementedException();
