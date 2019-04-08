@@ -31,6 +31,8 @@ namespace Ejercito
         [Required]
         public double Precio { get => precioUnid; set => precioUnid = value; }
 
+        public Division Division { get; set; }
+
         public double DamePotenciaDeFuego()
         {
             return PotenciaDeFuego;

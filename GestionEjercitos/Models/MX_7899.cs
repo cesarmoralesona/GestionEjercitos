@@ -22,6 +22,8 @@ namespace Ejercito
         [Required]
         public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public Division Division { get; set; }
+
         public void DameBlindaje()
         {
             throw new NotImplementedException();
