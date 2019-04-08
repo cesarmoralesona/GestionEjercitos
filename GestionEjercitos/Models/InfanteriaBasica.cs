@@ -14,33 +14,32 @@ namespace Ejercito
         [StringLength(50)]
         public string NombreInfanteriaBasica { get; set; }
 
-        public IEjercito IEjercito { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IEjercito IEjercito { get; set; }
         [Required]
-        [DataType(DataType.Currency)]
-        public double Precio { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Precio { get; set; }
         [Required]
-        public double PotenciaDeFuego { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double PotenciaDeFuego { get; set; }
         [Required]
-        public double Velocidad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double Velocidad { get; set; }
 
         public double DameCapacidadMilitar()
         {
-            throw new NotImplementedException();
+            return CapacidadMilitar.DameCapacidadMilitar(PotenciaDeFuego, Velocidad, 0);
         }
 
         public double DamePotenciaDeFuego()
         {
-            throw new NotImplementedException();
+            return PotenciaDeFuego;
         }
 
-        public void DamePrecio()
+        public double DamePrecio()
         {
-            throw new NotImplementedException();
+            return Precio;
         }
 
-        public void DameVelocidad()
+        public double DameVelocidad()
         {
-            throw new NotImplementedException();
+            return Velocidad;
         }
     }
 }

@@ -9,7 +9,8 @@ namespace Ejercito
     public interface IDestructor
     {
         double PotenciaDeFuego { get; set; }
-
+       
+        
         double DamePotenciaDeFuego();
     }
 }
